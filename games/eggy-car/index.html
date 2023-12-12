@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script defer src="/import.js"></script>
+  <script src="/script/fullscreen.js"></script>
+  <link rel="stylesheet" href="/styles/style-for-games/style.css">
+  <title>Eggy Car play online - BöbGames</title>
+</head>
+
+<body>
+
+  <div id="target"></div>
+
+  <center>
+    <div class="icon-bar">
+      <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+      <a class="icon_bar_active" href="/games"><i class="fa-solid fa-headset"></i> Games</a>
+      <a href="/stories"><i class="fa-solid fa-book"></i> Stories</a>
+      <a href="/contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </div>
+  </center>
+
+  <h1 style="font-size: 70px; color: aquamarine;">
+    <center>
+      Eggy Car play online
+    </center>
+  </h1>
+
+  <br>
+  <br>
+
+  <div id="game">
+    <center>
+      <div id="game-iframe">
+        <iframe src="https://webglmath.github.io/eggy-car/" width="100%" height="100%" frameBorder="0"
+          sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation">
+          Your browser does not support iframes.
+        </iframe>
+      </div>
+      <div id="game-bar">
+        <a class="fullscreen">
+          <i class="fa-solid fa-expand fullscreen-center" onclick="fullscreen()"></i>
+        </a>
+        <img src="logo.png">
+        <div id="game-info">
+          <p id="game-name">Eggy Car</p>
+          <p id="game-author">Made by: ?</p>
+        </div>
+      </div>
+    </center>
+  </div>
+
+  <div id="footer"></div>
+</body>
+
+</html>
