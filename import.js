@@ -21,6 +21,6 @@ fetch('/footer.html')
     footerEL.innerHTML = htmlSnippet;
   });
 
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  location.replace("https://phone.bobgaemes.repl.co");
-}
+// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+//   location.replace("https://phone.bobgaemes.repl.co");
+// }
