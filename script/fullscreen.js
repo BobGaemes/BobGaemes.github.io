@@ -2,6 +2,12 @@ var GAME_IFRAME;
 
 window.addEventListener("load", (event) => {
   GAME_IFRAME = document.getElementById("game-iframe");
+  
+  window.onkeydown= function(kb) {
+    if(kb.keyCode === 70) {
+      fullscreen();
+    };
+  };
 });
 
 function fullscreen() {
@@ -18,9 +24,3 @@ function fullscreen() {
 
   GAME_IFRAME.style.borderRadius = "20px 20px 0px 0px";
 }
-
-document.addEventListener('keydown', function(event) {
-  if (event.code === 'KeyF') {
-    fullscreen();
-  }
-});
