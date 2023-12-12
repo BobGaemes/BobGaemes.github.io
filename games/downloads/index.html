@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script defer src="/import.js"></script>
+  <script src="/script/script.js"></script>
+  <title>Downloads - BöbGames</title>
+</head>
+
+<body>
+  <center>
+
+    <div id="target"></div>
+
+    <div class="icon-bar">
+      <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+      <a class="icon_bar_active" href="/games"><i class="fa-solid fa-headset"></i> Games</a>
+      <a href="/stories"><i class="fa-solid fa-book"></i> Stories</a>
+      <a href="/contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </div>
+
+    <h1 style="font-size: 60px; color: aquamarine;">
+      Downloads
+    </h1>
+
+    <p style="text-align: center;" id="bobio-version-text">
+      <!-- <a href="downloads/bob-io-download.html" id="bobio-version-text">Halo</a> -->
+      yes
+    </p>
+
+    <script>
+      function hideOlderVersions() {
+
+        let spoiler = document.getElementById('spoiler');
+        let spoiler_button = document.getElementById('spoiler-button');
+
+        if (document.getElementById('spoiler').style.display == 'none') {
+          spoiler.style.display = '';
+          spoiler_button.innerHTML = 'Click to hide older versions';
+        } else {
+          spoiler.style.display = 'none';
+          spoiler_button.innerHTML = 'Click to show older versions';
+        }
+      }
+    </script>
+
+    <div class="downloads">
+
+      <div>
+        <p>
+          Böb.IO v1.0.0
+          <a href="#">
+            Download for Windows
+          </a>
+        </p>
+      </div>
+
+      <br>
+
+      <button type="button" onclick="hideOlderVersions();" id="spoiler-button">
+        Click to show older versions
+      </button>
+      <div id="spoiler" style="display: none; color: white;">
+        HOLYBANAN
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+  </center>
+</body>
+
+</html>
