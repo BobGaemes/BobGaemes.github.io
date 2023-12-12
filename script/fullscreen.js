@@ -19,8 +19,8 @@ function fullscreen() {
   GAME_IFRAME.style.borderRadius = "20px 20px 0px 0px";
 }
 
-const keyboard = navigator.keyboard;
-keyboard.getLayoutMap().then((keyboardLayoutMap) => {
-  const upKey = keyboardLayoutMap.get("KeyW");
-  window.alert(`Press ${upKey} to move up.`);
+document.addEventListener('keydown', function(event) {
+  if (event.code === 'KeyF') {
+    fullscreen();
+  }
 });
