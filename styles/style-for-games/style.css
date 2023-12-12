@@ -1,0 +1,74 @@
+.fullscreen-center {
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.fullscreen i {
+  float: right;
+  color: #ffffff;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+
+.fullscreen i:hover {
+  transform: rotate(-15deg);
+  color: #a0a0a0;
+  cursor: url('/styles/style-for-all/cursor-link.cur'), auto;
+  background: #bababaaa;
+}
+
+#game-bar {
+  width: 1000px;
+  height: 80px;
+  background-color: #f2f2f2;
+  border-radius: 0px 0px 20px 20px;
+  border: 2px solid black;
+  border-top: 0px solid black;
+  top: -20px;
+}
+
+#game-info {
+  text-shadow:
+    0px 0px 0 white,
+    0px 0px 0 white,
+    0px 0px 0 white,
+    0px 0px 0 white;
+  font-weight: 900;
+  float: left;
+}
+
+#game-name {
+  color: black;
+  font-size: 25px;
+}
+
+#game-author {
+  font-size: 20px;
+  color: #424242;
+  float: left;
+  text-decoration: none;
+  position: absolute;
+}
+
+#game-bar img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  padding: 10px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#game-iframe {
+  width: 1000px;
+  height: 720px;
+  border-radius: 20px 20px 0px 0px;
+  border: 2px solid black;
+  border-bottom: 0px solid black;
+  overflow: hidden;
+}
