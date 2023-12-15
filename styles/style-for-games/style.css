@@ -9,14 +9,14 @@
   align-items: center;
 }
 
-.fullscreen i {
+.fullscreen a {
   float: right;
   color: #ffffff;
   font-size: 35px;
   transition: all 0.3s ease;
 }
 
-.fullscreen i:hover {
+.fullscreen a:hover {
   transform: rotate(-15deg);
   color: #a0a0a0;
   cursor: url('/styles/style-for-all/cursor-link.cur'), auto;
